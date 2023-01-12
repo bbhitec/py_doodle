@@ -100,6 +100,26 @@ class LinkedList:
 
         new_node = ListNode(n, p.next)
         p.next = new_node
+
+
+    # used in leetcode 203
+    def remove(self, n):
+        if self.headval.val == n:
+            self.headval = self.headval.next
+            return
+
+        prev = self.headval
+        curr = self.headval.next
+
+        while curr is not None:
+            if curr.val == n:
+                # the actual deletion (omission),
+                # we can return here if only a single deletion is required
+                prev.next = curr.next
+                # return
+            else:
+                prev = curr
+            curr = curr.next
             
 
           
@@ -116,11 +136,18 @@ def main():
 
     print("inserting")
     list1.insert(6)
+    list1.insert(3)
     list1.printList()
 
-    print("reversing")
-    list1.reverseList()
+    # print("reversing")
+    # list1.reverseList()
+    # list1.printList()
+
+    print("removing " + "3")
+    list1.remove(3)
     list1.printList()
+
+
 
 
 
