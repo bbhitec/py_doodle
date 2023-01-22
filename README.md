@@ -5,6 +5,7 @@ Various Python doodles and ideas
 
 ## WIP
 - [ ] just imported. filter/clean apps
+- [ ] merge py_basics witihn this repo? https://stackoverflow.com/questions/1425892/how-do-you-merge-two-git-repositories
 <br><br>
 
 ## Gains
@@ -22,3 +23,8 @@ Install required packages if needed:<br>
 ```
 pip install -r requirements.txt
 ```
+
+<br>
+
+## 😂 Here is a random joke that'll make you laugh!
+![Jokes Card](https://readme-jokes.vercel.app/api)

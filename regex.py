@@ -33,12 +33,16 @@ else:
 ###matches_list = [re.findall(r'print',line) 
 ###     for line in open('py2_file.py')]
 
-f = open('py2_file.py','r')
-fl = f.readlines() # readlines reads the individual lines into a list
-for line in fl:
-    matches_list = re.findall(r'print',line)
+# [demo] 'with' block instead of a try:catch will release the resources upon exiting
+with  open('py2_file.py','r') as f:
+    fl = f.readlines() # readlines reads the individual lines into a list
+    for line in fl:
+        # matches_list = re.findall(r'    print',line)
+        x = re.findall("print", line)
+        print(x)
+        # print(line)
 
-print (matches_list)
+# print (matches_list)
 # 
 # replace_str = 'print'
 # print (replace_str + str(matches_list[1]))
