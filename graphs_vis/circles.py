@@ -1,4 +1,4 @@
-# [mst] circles.py 
+# [mst] circles.py
 # using pygame to draw circles on the canvas
 # based on https://youtu.be/z14lm74wK40
 #

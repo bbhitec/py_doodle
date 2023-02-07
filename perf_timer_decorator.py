@@ -9,7 +9,7 @@
             -perf counter as a wrapper by https://youtu.be/qUeud6DvOWI
             with arguments and different syntaxes
 
- 
+
 Created on Jan 11, 2021
 @author: mst
 '''
@@ -29,11 +29,11 @@ def perf_count_decorator(func):
         diff = time.perf_counter()-start
         print (f'task {func.__name__} ran for {diff} secs')
     return inner    # this is the wrapper call
-    
-    
+
+
 
 # the naive top-bottom recursive fibonacci calculation is infamously
-# inefficient. we can use built in caching to remember (cache) 
+# inefficient. we can use built in caching to remember (cache)
 # calculated values
 @lru_cache(maxsize=5)
 def fib (n):
@@ -63,7 +63,7 @@ def main():
     #print (f'task ran for {time.perf_counter()-start}')
 '''
 
-    
-   
+
+
 if __name__ == ("__main__"):
-    main() 
+    main()

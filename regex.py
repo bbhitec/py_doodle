@@ -1,5 +1,5 @@
 #
-# [mst] regex.py 
+# [mst] regex.py
 # doodling with regular expressions matching in python
 #
 # log:
@@ -21,16 +21,16 @@ else:
 ############################################# [here]
 #[wip] refresh this
 # with open('py2_file.py') as f:
-#     patt = re.compile('print') 
+#     patt = re.compile('print')
 #     for line in f:
 #         match = re.search('print', line)
 #         if match:
 #             print ("spotted a print")
-      
-            
+
+
 # refresh this [wip][here]
 ###matches_list = [re.findall(r'print(?!\s*[\(\)])\s*(.*)',line)
-###matches_list = [re.findall(r'print',line) 
+###matches_list = [re.findall(r'print',line)
 ###     for line in open('py2_file.py')]
 
 # [demo] 'with' block instead of a try:catch will release the resources upon exiting
@@ -43,7 +43,7 @@ with  open('py2_file.py','r') as f:
         # print(line)
 
 # print (matches_list)
-# 
+#
 # replace_str = 'print'
 # print (replace_str + str(matches_list[1]))
 

@@ -2,13 +2,13 @@
 '''
     @author [mst]
     @file   linked_lists.py
-    
+
     linked lists doodles in python
     [wip] make a menu with insertion and deletion etc
     - use or omition of the of super class
     - iterative and recursive reversal
     - used in leetcode 206
-    
+
     features, changelog:
     -2022.11: -initial draft
 
@@ -37,7 +37,7 @@ class LinkedList:
     # construct from an array
     def __init__(self, nums):
         if not nums:
-            return None    
+            return None
         self.headval = ListNode(nums[0])
         p = self.headval
         for n in nums[1::]:
@@ -57,10 +57,10 @@ class LinkedList:
         # stopping condition. we use next.nxt so we have to check it is valid
         if head is None or head.next is None:
             return head
- 
+
         # treat rest of list
         rest = self.reverseList(head.next)
- 
+
         # treat current node
         head.next.next = head
         head.next = None
@@ -89,7 +89,7 @@ class LinkedList:
             curr.next = prev
             prev = curr
             curr = next
-        
+
         self.headval = prev
 
     def insert(self, n):
@@ -120,9 +120,9 @@ class LinkedList:
             else:
                 prev = curr
             curr = curr.next
-            
 
-          
+
+
 
 ################## DRIVER
 def main():

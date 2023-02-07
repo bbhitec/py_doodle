@@ -3,7 +3,7 @@
     @author [mst]
     @file   tree.py
     @brief  Binary tree implementations and utils
-    
+
     gains:
     -python basic classes, syntax
 
@@ -58,13 +58,25 @@ class TreeNode:
             self.insert(n)
 
 
+# pre/in/postorder traversal of the tree
+def traversal(self, root: Optional[TreeNode]) -> List[int]:
+    res = []
+    self.dfs(root, res)
+    return res
+    
+    def dfs(self, root, res):
+        if root:
+            
+            self.dfs(root.left, res)
+            self.dfs(root.right, res)
+            res.append(root.val)    # placing this line before/mid calls will do a pre/in order traversal
 
 
 ################## DRIVER
 def main():
     print ("[mst] binary tree doodle")
 
-    head = TreeNode()    
+    head = TreeNode()
 
     #  inserting values as the example shows: [4,2,7,1,3,6,9]
 	#     4
@@ -74,7 +86,7 @@ def main():
 	# 1   3 6  9
     arr = [4,2,7,1,3,6,9]
     head.insert_arr(arr)
-    head.print_inorder()    
+    head.print_inorder()
 
 
 if __name__ == ("__main__"):

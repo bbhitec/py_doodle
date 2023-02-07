@@ -1,7 +1,7 @@
 ##!/usr/bin/env python
 '''
     @author [mst]
-    @file   <filename>.<extension>    
+    @file   <filename>.<extension>
     @brief  <title or quick description>
     full/optional description: this is a placeholder
     template for new files creation
