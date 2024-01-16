@@ -17,7 +17,7 @@ class className():
     :type nums: List[int]
     :type target: int
     :rtype: List[int]
-     '''
+    '''
     def method1(self):
         return
 
