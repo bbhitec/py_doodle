@@ -11,8 +11,8 @@ Various Python training, doodles and ideas
 - Basic graphs and visualizations
 
 ## WIP
-- [ ] mp3 tagger script with mutagen
-- [ ] circle detection works with canny algo
+- [x] mp3 tagger script with mutagen - move to dedicated repo
+- [ ] circle detection works with canny algo - move to dedicated repo
 - [ ] merge py_basics witihn this repo? https://stackoverflow.com/questions/1425892/how-do-you-merge-two-git-repositories
 <br><br>
 
@@ -29,8 +29,3 @@ Install required packages if needed:<br>
 ```
 pip install -r requirements.txt
 ```
-
-<br>
-
-## 😂 Here is a random joke that'll make you laugh!
-![Jokes Card](https://readme-jokes.vercel.app/api)
