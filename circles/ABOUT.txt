@@ -1,0 +1,2 @@
+building and app to find circles in an image
+using various tecniques and packages

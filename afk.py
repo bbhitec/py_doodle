@@ -1,8 +1,7 @@
 ##!/usr/bin/env python
 '''
     @author [mst]
-    @brief   simple mouse moves using pyautogui
-
+    @brief   simple mouse moving simulation using pyautogui
     @version 2023.02
 '''
 
